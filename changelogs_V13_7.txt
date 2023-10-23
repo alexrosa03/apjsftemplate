@@ -1,0 +1,77 @@
+v11
+-cba settings
+-fixed init order
+-initPlayerLocal
+-description
+-removed unnecessary lines
+
+v12
+-added zeusCompositionScriptLevel = 2; in description.ext
+-added bulletfired, bodyPartTreated and playerUnconscious script in initServer.sqf
+
+v13
+-added zeusPing,zeusPlaced and FriendlyFire EH in initPlayerLocal
+-removed bulletFired EH
+-improved playerUnconscious EH
+-fixed bandageUsed/bodyPartTreated EH
+
+v13.2
+-ff script by joten
+
+v13.3
+-civKilled rpt log added
+
+v13.4
+SlingLoading code changed below
+line 752
+[-] [_vehicle,_player] call ASL_Drop_Ropes;
+[+] [_vehicle,_player,(_vehicleWithIndex select 1)] call ASL_Drop_Ropes;
+
+v13.5
+-added back ace view restrictions on cba settings
+
+v13.6 (joten update)
+- friendly fire now doesnt count on self inflicted damage
+- KAT Pharmacy can now only be exclusively be used by medics
+
+v.13.6.2 (illu)
+- force acex_field_rations_enabled = true;
+- force acex_field_rations_timeWithoutFood = 5;
+- force acex_field_rations_timeWithoutWater = 3;
+- 	class acex_field_rations_enabled
+	{
+		title = $STR_A3PH_fieldRations;
+		ACE_setting = 1;
+		values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 1;
+	};
+	class ace_overheating_enabled
+	{
+		title = $STR_A3PH_overheating;
+		ACE_setting = 1;
+		values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 1;
+	};
+	class emr_main_enableWeightCheck
+	{
+		title = $STR_A3PH_weightCheckEM;
+		ACE_setting = 1;
+		values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 1;
+	};
+//added in description.ext
+- fixed kat pharm perms
+
+v.13.6.3
+- changed loadfactor to 0.8
+
+v.13.6.4.1
+- added endex scripts
+- code improvement (publicvariableserver) - removed
+
+v.13.6.5
+- moved logs to script folder, switched to vm execution
+- added curator rc onHit script

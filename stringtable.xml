@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name ="A3PH Mission Template">
+  <Container name ="A3PH_Main_Stringtable">
+  <Key ID="STR_A3PH_Title_0">
+      <English>=================================== Environment Settings ===================================</English>
+    </Key>
+  <Key ID="STR_A3PH_timeOfDay">
+      <English>Time of Day</English>
+    </Key>
+  <Key ID="STR_A3PH_timeAcc">
+      <English>Time Acceleration</English>
+    </Key>
+  <Key ID="STR_A3PH_weather">
+      <English>Weather</English>
+    </Key>
+  <Key ID="STR_A3PH_Title_1">
+      <English>=================================== AI Settings ===================================</English>
+    </Key>
+  <Key ID="STR_A3PH_damageMultiplier">
+      <English>Damage Multiplier</English>
+    </Key>
+  <Key ID="STR_A3PH_vcomEnable">
+      <English>Enable VCOM AI?</English>
+    </Key>
+  <Key ID="STR_A3PH_Title_2">
+      <English>=================================== ACE Medical Settings ===================================</English>
+    </Key>
+  <Key ID="STR_A3PH_consumeSurgical">
+      <English>Consumable Surgical Kits?</English>
+    </Key>
+  <Key ID="STR_A3PH_consumePAK">
+      <English>Consumable Personal Aid Kits?</English>
+    </Key>
+  <Key ID="STR_A3PH_Title_3">
+      <English>=================================== ACEX View Restriction Settings ===================================</English>
+    </Key>
+  <Key ID="STR_A3PH_viewFoot">
+      <English>View Restriction while on foot?</English>
+    </Key>
+  <Key ID="STR_A3PH_viewLand">
+      <English>View Restriction while inside land vehicles?</English>
+    </Key>
+  <Key ID="STR_A3PH_viewAir">
+      <English>View Restriction while inside air vehicles?</English>
+    </Key>
+  <Key ID="STR_A3PH_viewSea">
+      <English>View Restriction while inside boats/ships?</English>
+    </Key>
+	
+	 <Key ID="STR_A3PH_Title_4">
+      <English>=================================== ACE Settings ===================================</English>
+    </Key>
+	
+	<Key ID="STR_A3PH_fieldRations">
+      <English>ACE Field Rations?</English>
+    </Key>
+	
+	<Key ID="STR_A3PH_overheating">
+      <English>ACE Overheating? (Can be disabled for some fun ops)</English>
+    </Key>
+	
+	<Key ID="STR_A3PH_weightCheckEM">
+      <English>Enable weight checking for Enhanced Movement? (Can be disabled for some fun ops)</English>
+    </Key>
+	
+  </Container>
+</Project>
