@@ -111,3 +111,21 @@ player addEventHandler ["Hit", {
     _message remoteExec ["diag_log",2];
   }
 }]call CBA_fnc_addEventHandler;
+
+zeusRole = "";
+
+switch (vehicleVarName player) do
+{
+	case "curator1": {
+    zeusRole = "Main Curator"
+  };
+	case "curator2": {
+    zeusRole = "Co-Curator"
+  };
+	case "observer": {
+    zeusRole = "Observer"
+  };
+};
+
+private _messageVar = format ["%1 has slotted and logged in as %2.", name player, zeusRole];
+  _messageVar remoteExec ["diag_log",2];

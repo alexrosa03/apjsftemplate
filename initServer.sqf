@@ -1,6 +1,8 @@
 //BIS Dynamic Group
 //["Initialize"] call BIS_fnc_dynamicGroups;
 
+"arma3philippines" serverCommand "#monitords 15";
+
 bandageUsed = 0;
 zeusPing = 0;
 timesFriendlyFired = 0;
