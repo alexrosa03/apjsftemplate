@@ -75,3 +75,7 @@ v.13.6.4.1
 v.13.6.5
 - moved logs to script folder, switched to vm execution
 - added curator rc onHit script
+
+v.13.7.1
+- Added logged in as zeus logs and monitords command
+- +5 secs on respawn is disabled on code
