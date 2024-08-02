@@ -86,3 +86,5 @@ v.13.7.2
 - removal of unused variable at initServer
 - increased ai difficulty
 - cba changes (illu)
+- code improvement for clientside logs zeusPlaced
+- fixed issue with inaccurate civilian killed numbers
