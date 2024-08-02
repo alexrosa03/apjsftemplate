@@ -20,7 +20,7 @@ class Header
 {
 	gameType = Zeus;	//Game type
 	minPlayers = 1;		//Minimum number of players the mission supports. Must reflect number of minimum playable slots
-	maxPlayers = 80;	//Maximum number of players the mission supports. Must reflect number of maximum playable slots
+	maxPlayers = 115;	//Maximum number of players the mission supports. Must reflect number of maximum playable slots
 };
 
 //Displays a message while the intro is loading.
@@ -46,15 +46,15 @@ respawnOnStart = -1;
 
 //Corpse and wreck management. DO NOT EDIT unless you know what you are doing
 corpseManagerMode = 1;
-corpseLimit = 15;
-corseRemovalMinTime = 30;
+corpseLimit = 10;
+corseRemovalMinTime = 60;
 corpseRemovalMaxtime = 1200;
 
 wreckManagerMode = 1;
-wreckLimit = 5;
+wreckLimit = 3;
 wreckRemovalMinTime = 60;
 wreckRemovalMaxTime = 1800;
-minPlayerDistance = 25;
+//minPlayerDistance = 25;
 
 //Disable global, side, command or system chat.
 // 0 Global, 1 Side, 2 Command, 3 Group, 4 Vehicle, 5 Direct, 6 System
@@ -66,7 +66,8 @@ disabledAI = 1;
 //Disabled team switch
 enableTeamSwitch = 0;
 
-enabledebugconsole = 1;
+enabledebugconsole[] = {"76561198089135254","76561198072575257","76561198239071512","76561198010093040","76561198052904933","76561198050555176","76561198321584644","76561198140987998"};
+//steam64id: illu, daine, marts, randymak, joten, oni, mercury, excel
 
 zeusCompositionScriptLevel = 2;
 

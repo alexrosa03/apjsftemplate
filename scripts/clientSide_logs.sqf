@@ -7,8 +7,6 @@ zCurator addEventHandler ["CuratorObjectPlaced", {
   {
     isEndex = true;
     publicVariable "isEndex";
-    private _message = format ["Total no. of bandages used: %1", bandageUsed];
-    _message remoteExec ["diag_log",2];
   }
 }];
 
@@ -21,8 +19,6 @@ zCoCurator addEventHandler ["CuratorObjectPlaced", {
   {
     isEndex = true;
     publicVariable "isEndex";
-    private _message = format ["Total no. of bandages used: %1", bandageUsed];
-    _message remoteExec ["diag_log",2];
   }
 }];
 
@@ -35,8 +31,6 @@ zObserver addEventHandler ["CuratorObjectPlaced", {
   {
     isEndex = true;
     publicVariable "isEndex";
-    private _message = format ["Total no. of bandages used: %1", bandageUsed];
-    _message remoteExec ["diag_log",2];
   }
 }];
 
@@ -49,26 +43,15 @@ zAdmin addEventHandler ["CuratorObjectPlaced", {
   {
     isEndex = true;
     publicVariable "isEndex";
-    private _message = format ["Total no. of bandages used: %1", bandageUsed];
-    _message remoteExec ["diag_log",2];
   }
 }];
 
 zCurator addEventHandler ["CuratorPinged", {
   params ["_curator", "_player"];
   _playerName = name _player;
-  zeusPing = zeusPing + 1;
-  publicVariable "zeusPing";
-  private _message = format ["%1 pinged! No. of pings: %2", _playerName, zeusPing];
+  private _message = format ["%1 pinged!", _playerName];
   _message remoteExec ["diag_log", 2];
 }];
-
-["ace_treatmentSucceded",{
-    params["_caller, _target, _selectionName, _className, _itemUser, _usedItem"];
-    bandageUsed = bandageUsed + 1;
-    publicVariable "bandageUsed";
-}]call CBA_fnc_addEventHandler;
-
 
 player addEventHandler ["Hit", {
   params ["_unit", "_source", "_damage", "_instigator"];

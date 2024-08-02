@@ -79,3 +79,10 @@ v.13.6.5
 v.13.7.1
 - Added logged in as zeus logs and monitords command
 - +5 secs on respawn is disabled on code
+
+v.13.7.2
+- performance improvement on description
+- removal of unused logs at clientside logs
+- removal of unused variable at initServer
+- increased ai difficulty
+- cba changes (illu)

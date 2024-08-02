@@ -1,17 +1,12 @@
 //BIS Dynamic Group
 //["Initialize"] call BIS_fnc_dynamicGroups;
 
-"arma3philippines" serverCommand "#monitords 15";
+"arma3philippines" serverCommand "#monitords 20";
 
-bandageUsed = 0;
-zeusPing = 0;
 timesFriendlyFired = 0;
-timesUnconscious = 0;
 civieKilled = 0;
 isEndex = false;
 respawnTimer = 15;
-publicVariable "bandageUsed";
-publicVariable "zeusPing";
 publicVariable "timesFriendlyFired";
 publicVariable "civieKilled";
 publicVariable "isEndex";

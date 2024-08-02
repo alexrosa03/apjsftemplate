@@ -3,8 +3,8 @@ force ace_advanced_ballistics_enabled = true;
 
 // ACE Advanced Fatigue
 force ace_advanced_fatigue_enabled = true;
-force ace_advanced_fatigue_loadFactor = 0.8; // 0.1-1
-force ace_advanced_fatigue_performanceFactor = 1.2; // 1-2
+force ace_advanced_fatigue_loadFactor = 0.8; // 0.1-1 (higher values = more stamina usage)
+force ace_advanced_fatigue_performanceFactor = 1.2; // 1-2 (do not change)
 force ace_advanced_fatigue_terrainGradientFactor = 1;
 
 // ACE Advanced Vehicle Damage

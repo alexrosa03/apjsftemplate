@@ -8,12 +8,12 @@ to init.sqf
  mad_ifnc_aiskill= 
  {
   params ['_dude'];
-  _dude setSkill ['aimingAccuracy', .2 + (random 0.05)];
-  _dude setSkill ['aimingShake', .19 + (random 0.05)];
-  _dude setSkill ['aimingSpeed', .19 + (random 0.05)];
-  _dude setSkill ['spotDistance', .19 + (random 0.1)];
-  _dude setSkill ['spotTime', .55 + (random 0.05)];
-  _dude setSkill ['courage', .75];
+  _dude setSkill ['aimingAccuracy', .3 + (random 0.05)];
+  _dude setSkill ['aimingShake', .49 + (random 0.05)];
+  _dude setSkill ['aimingSpeed', .49 + (random 0.05)];
+  _dude setSkill ['spotDistance', .69 + (random 0.1)];
+  _dude setSkill ['spotTime', .45 + (random 0.05)];
+  _dude setSkill ['courage', .85];
   _dude setSkill ['reloadSpeed', 1];
   _dude setSkill ['commanding',.85];
   _dude setSkill ['general', .9 + (random 0.05)]; 
