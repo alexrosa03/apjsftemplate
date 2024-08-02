@@ -1,50 +1,15 @@
-zCurator addEventHandler ["CuratorObjectPlaced", {
-  params ["_curator", "_entity"];
-  _unitName = typeOf _entity;
-  private _message = format ["Zeus %1 has placed: %2", _curator, _unitName];
-  _message remoteExec ["diag_log", 2];
-  if (_unitName == "ModuleEndMission_F" || _unitName == "zen_custom_modules_33") then 
-  {
-    isEndex = true;
-    publicVariable "isEndex";
-  }
-}];
-
-zCoCurator addEventHandler ["CuratorObjectPlaced", {
-  params ["_curator", "_entity"];
-  _unitName = typeOf _entity;
-  private _message = format ["Zeus %1 has placed: %2", _curator, _unitName];
-  _message remoteExec ["diag_log", 2];
-  if (_unitName == "ModuleEndMission_F" || _unitName == "zen_custom_modules_33") then 
-  {
-    isEndex = true;
-    publicVariable "isEndex";
-  }
-}];
-
-zObserver addEventHandler ["CuratorObjectPlaced", {
-  params ["_curator", "_entity"];
-  _unitName = typeOf _entity;
-  private _message = format ["Zeus %1 has placed: %2", _curator, _unitName];
-  _message remoteExec ["diag_log", 2];
-  if (_unitName == "ModuleEndMission_F" || _unitName == "zen_custom_modules_33") then 
-  {
-    isEndex = true;
-    publicVariable "isEndex";
-  }
-}];
-
-zAdmin addEventHandler ["CuratorObjectPlaced", {
-  params ["_curator", "_entity"];
-  _unitName = typeOf _entity;
-  private _message = format ["Zeus %1 has placed: %2", _curator, _unitName];
-  _message remoteExec ["diag_log", 2];
-  if (_unitName == "ModuleEndMission_F" || _unitName == "zen_custom_modules_33") then 
-  {
-    isEndex = true;
-    publicVariable "isEndex";
-  }
-}];
+{ _x addEventHandler ["CuratorObjectPlaced", {
+    params ["_curator", "_entity"];
+    _unitName = typeOf _entity;
+    private _message = format ["Zeus %1 has placed: %2", _curator, _unitName];
+   _message remoteExec ["diag_log", 2];
+    if (_unitName == "ModuleEndMission_F" || _unitName == "zen_custom_modules_33") then 
+    {
+      isEndex = true;
+      publicVariable "isEndex";
+    };
+  }];
+} forEach allCurators;
 
 zCurator addEventHandler ["CuratorPinged", {
   params ["_curator", "_player"];
