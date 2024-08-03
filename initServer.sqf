@@ -7,6 +7,7 @@ timesFriendlyFired = 0;
 civieKilled = 0;
 isEndex = false;
 respawnTimer = 15;
+timesUnconscious = 0;
 publicVariable "timesFriendlyFired";
 publicVariable "civieKilled";
 publicVariable "isEndex";
