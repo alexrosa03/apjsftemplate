@@ -10,7 +10,7 @@
 
 addMissionEventHandler ["entityKilled", {
     params ["_unit", "_killer"];
-    killer = _killer
+    killer = _killer;
     [] spawn {
         private _message = format ["Civilian was killed by %1", name killer];
         civieKilled = civieKilled + 1;
