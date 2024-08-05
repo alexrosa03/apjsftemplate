@@ -18,17 +18,26 @@ zCurator addEventHandler ["CuratorPinged", {
   _message remoteExec ["diag_log", 2];
 }];
 
+alreadyHit = false;
+
 player addEventHandler ["Hit", {
   params ["_unit", "_source", "_damage", "_instigator"];
   _unitName = name _unit;
   _instiName = name _instigator;
   if(side _instigator == side _unit && isNull (getAssignedCuratorLogic _instigator) && _unitName != _instiName) then {
     private _message = format ["%1 has friendly fired %2 with %3", _instiName, _unitName, currentWeapon (vehicle _instigator)];
-    timesFriendlyFired = timesFriendlyFired + 1;
-    publicVariable "timesFriendlyFired";
-    private _message2 = format ["Friendly fire incident: %1", timesFriendlyFired];
     _message remoteExec ["diag_log", 2];
-    _message2 remoteExec ["diag_log",2];
+    if (alreadyHit == false) then {
+      [] spawn {
+        alreadyHit = true;
+        timesFriendlyFired = timesFriendlyFired + 1;
+        publicVariable "timesFriendlyFired";
+        private _message2 = format ["Friendly fire incident: %1", timesFriendlyFired];
+        _message2 remoteExec ["diag_log",2];
+        sleep 10;
+        alreadyHit = false;
+      };
+    };
   };
 
   if(!isNull (getAssignedCuratorLogic _instigator)) then {
