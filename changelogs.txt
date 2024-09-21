@@ -89,3 +89,6 @@ v.13.7.2
 - code improvement for clientside logs zeusPlaced
 - fixed issue with inaccurate civilian killed numbers
 - minor fix with friendly fire stats
+
+v.13.7.3
+- added discord rich presence functions

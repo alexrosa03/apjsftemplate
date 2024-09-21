@@ -73,7 +73,8 @@ zeusCompositionScriptLevel = 2;
 
 class CfgFunctions
 {
-	#include "scripts\cfgFunctions.hpp"
+	#include "scripts\cfgFunctions.hpp";
+	#include "scripts\discord.cpp";
 };
 
 //Mission Parameters
